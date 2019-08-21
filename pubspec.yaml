@@ -1,0 +1,62 @@
+name: auth
+description: A new Flutter application.
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^0.1.2
+  pin_input_text_field: ^1.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - lib/assets/imgs/centerLogo.png
+    - lib/assets/imgs/curve.png
+    - lib/assets/imgs/img.png
+    - lib/assets/imgs/curve-bg.png
+    - lib/assets/imgs/key.png
+
+    - lib/assets/bgs/bg-gradient.png
+    - lib/assets/bgs/bg-signup.png
+
+    - lib/assets/icons/lock.png
+    - lib/assets/icons/not-show.png
+    - lib/assets/icons/show.png
+    - lib/assets/icons/user.png
+    - lib/assets/icons/lock-grey.png
+    - lib/assets/icons/show-grey.png
+    - lib/assets/icons/user-grey.png
+    - lib/assets/icons/facebook.png
+    - lib/assets/icons/google-plus.png
+    - lib/assets/icons/twitter.png
+
+  fonts:
+    - family: SfProTextSemibold
+      fonts:
+      - asset: lib/assets/fonts/SfProTextSemibold.ttf
+        weight: 400
+
+    - family: SfProTextRegular
+      fonts:
+      - asset: lib/assets/fonts/SfProTextRegular.ttf
+        weight: 400
+
+    - family: AcuminProBold
+      fonts:
+      - asset: lib/assets/fonts/AcuminProBold.otf
+        weight: 400
+
+    - family: AcuminProRegular
+      fonts:
+      - asset: lib/assets/fonts/AcuminProRegular.otf
+        weight: 400
