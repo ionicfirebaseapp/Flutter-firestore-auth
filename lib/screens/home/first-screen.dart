@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:auth/styles/styles.dart';
-import 'package:auth/widgets/round-buttons.dart';
-import 'package:auth/styles/transitions/slide-transitions.dart';
-import 'package:auth/screens/auth/sign-in.dart';
-import 'package:auth/screens/auth/sign-up.dart';
+import 'package:auth_pro/styles/styles.dart';
+import 'package:auth_pro/widgets/round-buttons.dart';
+import 'package:auth_pro/styles/transitions/slide-transitions.dart';
+import 'package:auth_pro/screens/auth/sign-in.dart';
+import 'package:auth_pro/screens/auth/sign-up.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 class FirstScreen extends StatefulWidget {
+  final FirebaseUser user;
+  const FirstScreen({Key key, this.user}) : super(key: key);
   @override
   _FirstScreenState createState() => _FirstScreenState();
 }

@@ -1,4 +1,4 @@
-name: auth
+name: auth_pro
 description: A new Flutter application.
 version: 1.0.0+1
 
@@ -10,7 +10,15 @@ dependencies:
     sdk: flutter
 
   cupertino_icons: ^0.1.2
-  pin_input_text_field: ^1.0.1
+  firebase_core: ^0.4.0+8
+  firebase_auth: ^0.11.1+12
+  cloud_firestore: ^0.12.7+1
+  google_sign_in: ^4.0.6
+  rxdart: ^0.22.1
+  flutter_facebook_login: ^2.0.1
+  shared_preferences: ^0.5.3+4
+  http: ^0.12.0+2
+  flutter_twitter_login: ^1.1.0
 
 dev_dependencies:
   flutter_test:
@@ -23,8 +31,6 @@ flutter:
     - lib/assets/imgs/centerLogo.png
     - lib/assets/imgs/curve.png
     - lib/assets/imgs/img.png
-    - lib/assets/imgs/curve-bg.png
-    - lib/assets/imgs/key.png
 
     - lib/assets/bgs/bg-gradient.png
     - lib/assets/bgs/bg-signup.png
@@ -39,6 +45,8 @@ flutter:
     - lib/assets/icons/facebook.png
     - lib/assets/icons/google-plus.png
     - lib/assets/icons/twitter.png
+
+    - lib/assets/gif/load.gif
 
   fonts:
     - family: SfProTextSemibold

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:auth/styles/styles.dart';
+import 'package:auth_pro/styles/styles.dart';
 
 class GradientBg extends StatefulWidget {
   @override
@@ -17,16 +17,11 @@ class _GradientBgState extends State<GradientBg> {
           height: screenHeight(context),
           width: screenWidth(context),
         ),
-        Container(
+        Image(
+          image: AssetImage("lib/assets/bgs/bg-gradient.png"),
+          fit: BoxFit.cover,
           height: screenHeight(context),
           width: screenWidth(context),
-          decoration: new BoxDecoration(
-            image: new DecorationImage(
-              fit: BoxFit.cover,
-              colorFilter: new ColorFilter.mode(Colors.black.withOpacity(0.5), BlendMode.darken),
-              image: AssetImage("lib/assets/bgs/bg-gradient.png"),
-            ),
-          ),
         ),
       ],
     );

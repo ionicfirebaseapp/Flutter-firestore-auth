@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:auth/styles/styles.dart';
-import 'package:auth/screens/home/first-screen.dart';
+import 'package:auth_pro/styles/styles.dart';
+import 'package:auth_pro/screens/home/first-screen.dart';
 
 void main() async {
   runApp(new MyApp());

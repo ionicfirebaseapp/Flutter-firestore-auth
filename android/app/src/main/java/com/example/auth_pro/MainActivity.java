@@ -1,4 +1,4 @@
-package com.example.auth;
+package com.example.auth_pro;
 
 import android.os.Bundle;
 import io.flutter.app.FlutterActivity;

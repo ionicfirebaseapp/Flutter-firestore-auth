@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:auth/styles/styles.dart';
+import 'package:auth_pro/styles/styles.dart';
 
 class HalfRoundButton extends StatefulWidget {
   final title, color1, color2, left;
