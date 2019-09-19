@@ -54,7 +54,7 @@ Read the [Getting started page](https://docs.ionicfirebaseapp.com/flutterapp/) f
 Within the download you'll get flutter Auth source code.
 
 <p align="center">
-    <img src="https://res.cloudinary.com/dlx35qw0l/image/upload/v1566992480/Restaurant-Dashboard_1_vldizk.jpg" alt="ionicfirebaseapp restaruant nodejs backend"> | <img src="https://res.cloudinary.com/dlx35qw0l/image/upload/v1566992480/Restaurant-Dashboard_1_vldizk.jpg" alt="ionicfirebaseapp restaruant nodejs backend">
+    <img src="https://res.cloudinary.com/dlx35qw0l/image/upload/v1568873813/iPhone_XR-XS_Max_3_bqwzg7.png" alt="Flutter Auth"> | <img src="https://res.cloudinary.com/dlx35qw0l/image/upload/v1568873811/iPhone_XR-XS_Max_1_qqpvkc.png" alt="Flutter Auth">
   </a>
 </p>
 
