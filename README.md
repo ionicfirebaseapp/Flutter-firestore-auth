@@ -34,24 +34,15 @@
 
 ## Quick start
 
-Ionic V3 version is available for free download. 
-
-Test from Play store from [ionicfirebaseapp](https://play.google.com/store/apps/details?id=com.yourcompany.singlerestaurant)
-
 - [Download the latest release.](https://www.ionicfirebaseapp.com/products/flutter-restaurant-app)
 
 Read the [Getting started page](https://docs.ionicfirebaseapp.com/flutterapp/) for information on the Flutter restaurant app.
 
 <p align="center">
   <a href="https://www.ionicfirebaseapp.com/products/flutter-restaurant-app">
-    <img src="https://res.cloudinary.com/dlx35qw0l/image/upload/v1566991562/Flutter-Restaurant_upmuph.jpg" alt="flutter restaurant mobile app">
+    <img src="https://res.cloudinary.com/dlx35qw0l/image/upload/v1568870331/login-signup-github-Banner_1_dek0pv.jpg" alt="flutter restaurant mobile app">
   </a>
 </p>
-
-## Video Installation Guide 
-| Ionic Restaurant app  | Restaurant Admin CMS |
-| ------------- | ------------- |
-| [![IONIC FIREBASE RESTAURANT MOBILE APP INSTALLATION GUIDE](https://res.cloudinary.com/dlx35qw0l/image/upload/v1568114294/restaurant-thumbnail_dv7emx.jpg)](http://www.youtube.com/watch?v=vyt5fe5UON4) | [![FIREBASE CMS INSTALLATION GUIDE](https://res.cloudinary.com/dlx35qw0l/image/upload/v1568114293/Youtube-thumbnail_fzudsy.jpg)](https://www.youtube.com/watch?v=DdW09PWLBFk)|
 
 ## Mobile app Features
 
