@@ -45,8 +45,11 @@ Read the [Getting started page](https://docs.ionicfirebaseapp.com/flutterapp/) f
 ## Mobile app Features
 
 1.Sign Up
+
 2.Login
+
 3.Forgot Password?
+
 4.Verification
 
 ## What's included
