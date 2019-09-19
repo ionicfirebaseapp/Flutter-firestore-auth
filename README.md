@@ -11,7 +11,7 @@
 <p align="center">
   Marketplace for Mobile app and Backend that developed on leading Enterprise Technologies with as well as with your custom Applictaion design.
   <br>
-  <a href="https://docs.ionicfirebaseapp.com/flutterapp"><strong>Explore Restaurant docs »</strong></a>
+  <a href="https://docs.ionicfirebaseapp.com/flutterapp"><strong>Explore Flutter Auth docs »</strong></a>
   <br>
   <br>
   </p>
