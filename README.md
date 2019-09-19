@@ -44,31 +44,17 @@ Read the [Getting started page](https://docs.ionicfirebaseapp.com/flutterapp/) f
 
 ## Mobile app Features
 
-1. Browse categories and their  MenuItems
-2. Add to cart MenuItems
-3. Table booking available
-4. Live chat with Restaurant Admin
-5. News list related to food & restaurant
-6. Save favorite item to buy again just in a click
-7. Manage Address and Checkout features
-8. Payment integration with Paypal and Stripe
-9. Easy to integrate any local payment gateway
-10. Track your order status
-11. Offers, Coupons, Taxes , Loyalty on each purchase
-12. Develop with Flutter and Dart 2.X
-13. Clean UI and Easy to Customize
-14. Support Firebase and custom Rest API backend 
-15. Easy to integrate with our both Firebase and NodeJS backend. 
+1.Sign Up
+2.Login
+3.Forgot Password?
+4.Verification
 
 ## What's included
 
-Within the download you'll get flutter restaurant app source code. Admin Dashboard to manage Menu or Orders can purchase as different package. 
-
-You can Buy the Admin Dashboard from [ionicfirebaseapp](https://www.ionicfirebaseapp.com/products/node-JS-restaurant-backend-dashboard)
+Within the download you'll get flutter Auth source code.
 
 <p align="center">
-  <a href="https://www.ionicfirebaseapp.com/products/backend-restaurant-firebase-app/">
-    <img src="https://res.cloudinary.com/dlx35qw0l/image/upload/v1566992480/Restaurant-Dashboard_1_vldizk.jpg" alt="ionicfirebaseapp restaruant nodejs backend">
+    <img src="https://res.cloudinary.com/dlx35qw0l/image/upload/v1566992480/Restaurant-Dashboard_1_vldizk.jpg" alt="ionicfirebaseapp restaruant nodejs backend"> | <img src="https://res.cloudinary.com/dlx35qw0l/image/upload/v1566992480/Restaurant-Dashboard_1_vldizk.jpg" alt="ionicfirebaseapp restaruant nodejs backend">
   </a>
 </p>
 
