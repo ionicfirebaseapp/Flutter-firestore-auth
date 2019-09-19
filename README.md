@@ -58,30 +58,6 @@ Within the download you'll get flutter Auth source code.
   </a>
 </p>
 
-1. Manage single restaurant
-2. Admin can access sales report for own restaurant
-3. Manage Categories and MenuItems
-4. Access new order and update there delivery status
-5. Table Booking Approve / Reject from Admin CMS
-6. Manage Coupon , Tag , Users List
-7. Send Push notifications to app users
-8. Loyalty points and Manage Delivery pincode Area
-9. Chat with customer
-10. Setting and Manage Blog/Articles
-11. Many more...
-
-## Restaurant Web app 
-
-Restaruant web app develop with angular 7 and integrated with both backend firebase and nodeJs version we have. You can check more details about both the webapp.
-
-<p align="center">
-  <a href="https://www.ionicfirebaseapp.com/products/web-restaurant-nodeJs-app">
-    <img src="https://res.cloudinary.com/dzu7tvexv/image/upload/f_auto,q_auto/v1566464628/x6o3kyqftwqeu59na3jy.jpg" alt="ionicfirebaseapp restaruant nodejs backend">
-  </a>
-</p>
-
-
-
 ## Bugs and feature requests
 
 Have a bug or a feature request. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/ionicfirebaseapp/ionic-3-restaurantapp/issues/new).
