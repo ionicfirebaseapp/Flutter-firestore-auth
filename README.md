@@ -34,8 +34,6 @@
 
 ## Quick start
 
-- [Download the latest release.](https://www.ionicfirebaseapp.com/products/flutter-restaurant-app)
-
 Read the [Getting started page](https://docs.ionicfirebaseapp.com/flutterapp/) for information on the Flutter restaurant app.
 
 <p align="center">
