@@ -11,6 +11,7 @@ import 'dart:convert' show json;
 import 'package:http/http.dart' as http;
 import 'package:flutter_twitter_login/flutter_twitter_login.dart';
 import 'package:google_sign_in/google_sign_in.dart';
+import 'forgot-password.dart';
 
 GoogleSignIn _googleSignIn = GoogleSignIn(
   scopes: [
@@ -84,25 +85,29 @@ class _SignInState extends State<SignIn> {
       return;
     } else {
       form.save();
-      setState(() {
-        loading = true;
-      });
-      try{
-        FirebaseUser user = await _auth.signInWithEmailAndPassword(
-          email: email,
-          password: password,
-        );
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => Chat(
-              user: user,
+
+      try {
+        FirebaseUser user = await auth.signInWithEmailAndPassword(
+            email: email, password: password);
+        setState(() {
+          loading = false;
+        });
+
+
+        print('onval $user');
+
+        Navigator.pushAndRemoveUntil(
+            context,
+            MaterialPageRoute(
+              builder: (BuildContext context) => Chat(user: user, userData: user,),
             ),
-          ),
-        );
-      }catch(e){
-        print('error........${e.toString()}');
-        errorText = e.toString().split(',')[1];
+                (Route<dynamic> route) => false);
+      } catch (onError) {
+        setState(() {
+          loading = false;
+        });
+        print('onnnnnn $onError');
+        errorText = onError.toString().split(',')[1];
         showDialog<Null>(
           context: context,
           barrierDismissible: false,
@@ -110,7 +115,7 @@ class _SignInState extends State<SignIn> {
             return Container(
               width: 270.0,
               child: new AlertDialog(
-                title: new Text('Please!!'),
+                title: new Text('Please check!!'),
                 content: new SingleChildScrollView(
                   child: new ListBody(
                     children: <Widget>[
@@ -121,7 +126,9 @@ class _SignInState extends State<SignIn> {
                 actions: <Widget>[
                   new FlatButton(
                     child: new Text('ok'),
-                    onPressed: () {Navigator.pop(context);},
+                    onPressed: () {
+                      Navigator.pop(context);
+                    },
                   ),
                 ],
               ),
@@ -129,10 +136,6 @@ class _SignInState extends State<SignIn> {
           },
         );
       }
-      setState(() {
-        loading = false;
-      });
-      return;
     }
   }
 
@@ -451,6 +454,13 @@ class _SignInState extends State<SignIn> {
                       ],
                     ),
                     FlatButton(
+                      onPressed: (){
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (BuildContext context) => ForgotPassword(),
+                          ),);
+                      },
                       child: Text("Forgot password?", style: textLightBlackTextAR(),),
                     )
                   ],

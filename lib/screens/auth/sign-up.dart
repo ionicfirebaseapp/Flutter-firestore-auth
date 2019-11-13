@@ -69,7 +69,8 @@ class _SignUpState extends State<SignUp> {
 
   CollectionReference get users => store.collection('users');
 
-  final FirebaseAuth _auth = FirebaseAuth.instance;
+  final databaseReference = Firestore.instance;
+  final FirebaseAuth auth = FirebaseAuth.instance;
 
   Future<void> registerUser() async {
 
@@ -78,25 +79,57 @@ class _SignUpState extends State<SignUp> {
       return;
     } else {
       form.save();
-      setState(() {
-        loading = true;
-      });
-      try{
-        FirebaseUser user = await _auth.signInWithEmailAndPassword(
-          email: email,
-          password: password,
-        );
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => Chat(
-              user: user,
-            ),
-          ),
-        );
-      }catch(e){
-        print('error........${e.toString()}');
-        errorText = e.toString().split(',')[1];
+      print('email name $email  $password');
+//      await LoginService.registerUser(email, password, name).then((onValue) {
+      FirebaseUser user = await auth
+          .createUserWithEmailAndPassword(email: email, password: password)
+          .then((userNew) {
+        print('onvalue $userNew');
+        setState(() {
+          loading = false;
+        });
+
+//        userNew.sendEmailVerification().then((_) {
+          showDialog<Null>(
+            context: context,
+            barrierDismissible: false,
+            builder: (BuildContext context) {
+              return Container(
+                width: 270.0,
+                child: new AlertDialog(
+                  title: new Text('Thank you for Signing Up with us...!!'),
+                  content: new SingleChildScrollView(
+                    child: new ListBody(
+                      children: <Widget>[
+                        new Text('Proceed with login'),
+                      ],
+                    ),
+                  ),
+                  actions: <Widget>[
+                    new FlatButton(
+                      child: new Text('ok'),
+                      onPressed: () {
+                        Navigator.pushAndRemoveUntil(
+                            context,
+                            MaterialPageRoute(
+                              builder: (BuildContext context) => SignIn(),
+                            ),
+                                (Route<dynamic> route) => false);
+                      },
+                    ),
+                  ],
+                ),
+              );
+            },
+          );
+
+//        });
+      }).catchError((onError) {
+        setState(() {
+          loading = false;
+        });
+        print('onnnnnn $onError');
+        errorText = onError.toString().split(',')[1];
         showDialog<Null>(
           context: context,
           barrierDismissible: false,
@@ -104,7 +137,7 @@ class _SignUpState extends State<SignUp> {
             return Container(
               width: 270.0,
               child: new AlertDialog(
-                title: new Text('Please!!'),
+                title: new Text('Please check!!'),
                 content: new SingleChildScrollView(
                   child: new ListBody(
                     children: <Widget>[
@@ -122,11 +155,7 @@ class _SignUpState extends State<SignUp> {
             );
           },
         );
-      }
-      setState(() {
-        loading = false;
       });
-      return;
     }
   }
   

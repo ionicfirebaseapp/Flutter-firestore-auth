@@ -77,8 +77,9 @@ dependencies {
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     implementation 'androidx.multidex:multidex:2.0.1'
-    implementation 'com.google.firebase:firebase-core:17.0.1'
+    implementation 'com.google.firebase:firebase-core:17.2.1'
     implementation 'com.twitter.sdk.android:twitter-core:3.1.1'
+    implementation 'com.facebook.android:facebook-android-sdk:5.8.0'
 }
 
 apply plugin: 'com.google.gms.google-services'

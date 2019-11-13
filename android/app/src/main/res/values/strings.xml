@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">auth_pro</string>
-    <string name="facebook_app_id">435882440344603</string>
-    <string name="fb_login_protocol_scheme">fb435882440344603</string>
+    <string name="facebook_app_id">2343906569038738</string>
+    <string name="fb_login_protocol_scheme">fb2343906569038738</string>
 </resources>
