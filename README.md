@@ -109,3 +109,22 @@ Flutter App: Browse Flutter Application @ https://www.ionicfirebaseapp.com/categ
 NodeJs Backend: Browse Your NodeJS Backend @ https://www.ionicfirebaseapp.com/category/backend
 
 Multi Restaurant App: Brose Multi Restaurant App @ https://www.ionicfirebaseapp.com/category/multi-restaurant
+
+Features of Flutter
+
+Flutter framework offers the following features to developers −
+
+    Modern and reactive framework.
+
+    Uses Dart programming language and it is very easy to learn.
+
+    Fast development.
+
+    Beautiful and fluid user interfaces.
+
+    Huge widget catalog.
+
+    Runs same UI for multiple platforms.
+
+    High performance application.
+
